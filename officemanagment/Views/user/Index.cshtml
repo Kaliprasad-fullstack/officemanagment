@@ -1,0 +1,15 @@
+﻿@Model IEnumerable<officemanagment.Models.user>
+    <h2>index</h2>
+    @foreach (var item in Model)
+    {
+        <h2>list of users</h2>
+
+        @Html.DisplayNameFor(m => m.username)
+        @Html.DisplayFor(modelItem => item.username)
+        @Html.DisplayNameFor(m => m.email)
+        @Html.DisplayFor(modelItem => item.email)
+        @Html.DisplayNameFor(m => m.password)
+        @Html.DisplayFor(modelItem => item.password)
+        <hr>
+
+    }
